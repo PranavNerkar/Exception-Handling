@@ -1,0 +1,21 @@
+class MYException extends Exception {
+    String msg = null ;
+    MYException(String s ){
+        // String Parameter aslela Constructor
+        msg = s ;
+    }
+}
+class CustamizedException {
+    public static void main(String[] args) {
+        try {
+            System.out.println("In Try") ;
+            throw new MYException("Custamized Exception") ;// itha aapan String pass Keli aahe mhanun aaplya String parameter aslela Constructor Lihawa LAgel
+        } catch(MYException me) { // me madhe : MYException "Custamized Exception" he map kele zatat
+        // MYException me == MYException me = new MYException("Custamized Exception") hi String Pathavli zate
+            System.out.println("In Catch") ;
+            System.out.println(me) ;
+        }
+    }
+}
+// catch(MYException me) parameter ha je throw honar aahe toch pahije
+// System.out.println("In Try") ;

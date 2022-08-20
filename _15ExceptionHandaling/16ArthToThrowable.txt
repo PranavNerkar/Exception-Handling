@@ -1,0 +1,57 @@
+PS C:\Users\Shree\Desktop\Java Progrms\pratic programs\_15ExceptionHandaling> javap java.lang.ArithmaticException    
+Error: class not found: java.lang.ArithmaticException
+PS C:\Users\Shree\Desktop\Java Progrms\pratic programs\_15ExceptionHandaling>  javap java.lang.ArithmeticException   
+Compiled from "ArithmeticException.java"
+public class java.lang.ArithmeticException extends java.lang.RuntimeException {
+  public java.lang.ArithmeticException();
+  public java.lang.ArithmeticException(java.lang.String);
+}
+PS C:\Users\Shree\Desktop\Java Progrms\pratic programs\_15ExceptionHandaling> javap java.lang.RuntimeException       
+Compiled from "RuntimeException.java"
+public class java.lang.RuntimeException extends java.lang.Exception {
+  static final long serialVersionUID;
+  public java.lang.RuntimeException();
+  public java.lang.RuntimeException(java.lang.String);
+  public java.lang.RuntimeException(java.lang.String, java.lang.Throwable);
+  public java.lang.RuntimeException(java.lang.Throwable);
+  protected java.lang.RuntimeException(java.lang.String, java.lang.Throwable, boolean, boolean);
+}
+PS C:\Users\Shree\Desktop\Java Progrms\pratic programs\_15ExceptionHandaling> javap java.lang.Exception
+Compiled from "Exception.java"
+public class java.lang.Exception extends java.lang.Throwable {
+  static final long serialVersionUID;
+  public java.lang.Exception();
+  public java.lang.Exception(java.lang.String);
+  public java.lang.Exception(java.lang.String, java.lang.Throwable);
+  public java.lang.Exception(java.lang.Throwable);
+  protected java.lang.Exception(java.lang.String, java.lang.Throwable, boolean, boolean);
+}
+PS C:\Users\Shree\Desktop\Java Progrms\pratic programs\_15ExceptionHandaling> javap java.lang.Throwable
+Compiled from "Throwable.java"
+public class java.lang.Throwable implements java.io.Serializable {
+  static final boolean $assertionsDisabled;
+  public java.lang.Throwable();
+  public java.lang.Throwable(java.lang.String);
+  public java.lang.Throwable(java.lang.String, java.lang.Throwable);
+  public java.lang.Throwable(java.lang.Throwable);
+  protected java.lang.Throwable(java.lang.String, java.lang.Throwable, boolean, boolean);
+  public java.lang.String getMessage();
+  public java.lang.String getLocalizedMessage();
+  public synchronized java.lang.Throwable getCause();
+  public synchronized java.lang.Throwable initCause(java.lang.Throwable);
+  final void setCause(java.lang.Throwable);
+  public java.lang.String toString();
+  public void printStackTrace();
+  public void printStackTrace(java.io.PrintStream);
+  public void printStackTrace(java.io.PrintWriter);
+
+ {
+    ** public synchronized java.lang.Throwable fillInStackTrace(); **
+  public java.lang.StackTraceElement[] getStackTrace();
+  public void setStackTrace(java.lang.StackTraceElement[]);
+}
+  
+  public final synchronized void addSuppressed(java.lang.Throwable);
+  public final synchronized java.lang.Throwable[] getSuppressed();
+  static {};
+}
